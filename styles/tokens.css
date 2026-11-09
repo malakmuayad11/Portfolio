@@ -12,8 +12,6 @@
   /* Lavender */
   --color-lavender-300: #dbcffa;
 
-  /* Backgrounds */
-  --color-lilac-100: #f2edfa;
   --color-white-50: #faf9fc;
 
   /* =========================
@@ -28,7 +26,7 @@
   /* Backgrounds */
   --color-background: var(--color-white-50);
   --color-surface: #ffffff;
-  --color-surface-muted: var(--color-lilac-100);
+  --color-surface-muted: #858585;
 
   /* Text */
   --color-text-primary: var(--color-plum-900);
