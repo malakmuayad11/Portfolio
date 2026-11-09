@@ -8,6 +8,7 @@
 }
 
 .experience__title {
+  width: 100%;
   font-size: var(--font-size-3xl);
   color: var(--color-primary);
   border-bottom: 3px solid var(--color-secondary);

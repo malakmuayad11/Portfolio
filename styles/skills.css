@@ -9,6 +9,7 @@
 }
 
 .skills__title {
+  width: 100%;
   align-self: flex-start;
   font-size: var(--font-size-3xl);
   color: var(--color-primary);
