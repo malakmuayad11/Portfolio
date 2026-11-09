@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.layout {
+  grid-area: "main";
+}
