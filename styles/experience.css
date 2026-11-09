@@ -42,13 +42,14 @@
 .experience__item::before {
   content: "";
   position: absolute;
-  left: calc(-1 * var(--spacing-5) - 8px);
+  left: calc(-1 * var(--spacing-5) - 9px);
   top: 4px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background: linear-gradient(
     90deg,
+    var(--color-primary),
     var(--color-accent),
     var(--color-secondary)
   );

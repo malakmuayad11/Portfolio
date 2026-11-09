@@ -1,41 +1,90 @@
 .header {
-  grid-area: "header";
+  grid-area: header;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  top: 0;
+  gap: var(--spacing-4);
   position: sticky;
+  top: 0;
   z-index: 9999;
-  background-color: var(--color-secondary);
-  padding: var(--spacing-3);
+  padding: var(--spacing-3) var(--spacing-5);
+  background-color: var(--color-accent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
 }
 
 .header__brand {
-  transform: translateY(-7px);
+  background: linear-gradient(100deg, #211a3c 0%, #51458d 48%, #8d82c8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: none;
+  text-decoration: none;
   font-size: var(--font-size-xl);
-  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  transition: color var(--transition-fast);
+}
+
+.header__brand:hover {
+  color: var(--color-secondary);
 }
 
 .header__brand-icon {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  color: var(--color-accent);
+  color: var(--color-secondary);
 }
 
 .header__nav-list {
   display: flex;
-  gap: var(--spacing-2);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  padding: 0;
+  margin: 0;
 }
 
 .header__nav-item {
-  list-style-type: none;
+  list-style: none;
+}
+
+.header__nav-item:first-child {
+  display: none;
 }
 
 .header__nav-link {
+  display: inline-block;
   text-decoration: none;
-  color: var(--color-accent);
-  transition: color var(--transition-fast);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  padding: var(--spacing-2);
+  border-radius: var(--radius-sm);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
 }
 
 .header__nav-link:hover {
   color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+.header__nav-link:focus-visible,
+.header__brand:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+@media (min-width: 512px) {
+  .header__brand {
+    display: block;
+  }
+  .header__nav-item:first-child {
+    display: inline-block;
+  }
 }
