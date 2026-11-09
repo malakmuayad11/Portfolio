@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Malak Abu Omar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link href="./styles/main.css" rel="stylesheet" />
     <script src="./animations.js" defer></script>
   </head>
@@ -40,49 +46,76 @@
     </header>
     <main class="layout">
       <section class="hero animate-on-scroll">
-        <span class="hero__greeting">👋 Hello, I'm</span>
-        <h1 class="hero__title">Malak Abu Omar</h1>
-        <p class="hero__role">Full-Stack Developer</p>
-        <small class="hero__description">
-          Passionate about building modern, scalable, and user-friendly web
-          applications.
-        </small>
-        <div class="hero__actions">
-          <button class="hero__button hero__button--primary">
-            <a href="#projects">View My Projects ➡️</a>
-          </button>
-          <button class="hero__button hero__button--secondary">
-            <a
-              download="CV - Malak Abu Omar"
-              href="./assets/CV - Malak Abu Omar.pdf"
-              >⬇️ Download CV</a
-            >
-          </button>
-        </div>
-        <div class="hero__socials">
-          <a class="hero__social-link" href="https://github.com/malakmuayad11"
-            ><img
-              alt="GitHub Icon"
-              class="hero__social-icon"
-              loading="eager"
-              src="./assets/icons/github-icon.svg"
-          /></a>
-          <a
-            class="hero__social-link"
-            href="https://www.linkedin.com/in/malak-abu-omar"
-            ><img
-              loading="eager"
-              alt="LinkenIn Icon"
-              class="hero__social-icon"
-              src="./assets/icons/linkedin-icon.svg"
-          /></a>
-          <a class="hero__social-link" href="mailto:malakmuayad15@gmail.com"
-            ><img
-              loading="eager"
-              alt="Email Icon"
-              class="hero__social-icon"
-              src="./assets/icons/email-icon.svg"
-          /></a>
+        <div class="hero__container">
+          <!-- Hero Content -->
+          <div class="hero__content">
+            <span class="hero__greeting">👋 Hello, I'm</span>
+            <h1 class="hero__title">Malak Abu Omar</h1>
+            <p class="hero__role">Full-Stack Developer</p>
+
+            <small class="hero__description">
+              Passionate about building modern, scalable, and user-friendly web
+              applications.
+            </small>
+
+            <div class="hero__actions">
+              <button class="hero__button hero__button--primary">
+                <a href="#projects">View My Projects ➡️</a>
+              </button>
+
+              <button class="hero__button hero__button--secondary">
+                <a
+                  download="CV - Malak Abu Omar"
+                  href="./assets/CV - Malak Abu Omar.pdf"
+                  >⬇️ Download CV</a
+                >
+              </button>
+            </div>
+
+            <div class="hero__socials">
+              <a
+                class="hero__social-link"
+                href="https://github.com/malakmuayad11"
+              >
+                <img
+                  alt="GitHub Icon"
+                  class="hero__social-icon"
+                  src="./assets/icons/github-icon.svg"
+                />
+              </a>
+
+              <a
+                class="hero__social-link"
+                href="https://www.linkedin.com/in/malak-abu-omar"
+              >
+                <img
+                  alt="LinkedIn Icon"
+                  class="hero__social-icon"
+                  src="./assets/icons/linkedin-icon.svg"
+                />
+              </a>
+
+              <a
+                class="hero__social-link"
+                href="mailto:malakmuayad15@gmail.com"
+              >
+                <img
+                  alt="Email Icon"
+                  class="hero__social-icon"
+                  src="./assets/icons/email-icon.svg"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="hero__image">
+            <img
+              src="./assets/logo.png"
+              alt="Logo"
+              class="hero__profile-image"
+            />
+          </div>
         </div>
       </section>
       <section class="about animate-on-scroll" id="about">
@@ -115,96 +148,185 @@
       </section>
       <section class="skills animate-on-scroll" id="skills">
         <h2 class="skills__title">My Skills</h2>
-        <div class="skills__grid">
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="React Icon"
-              class="skills__icon"
-              src="./assets/icons/react-icon.svg"
-            />
-            <p class="skills__name">React</p>
+
+        <!-- Frontend -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">Frontend Development</h3>
+
+          <div class="skills__grid">
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="HTML5 Icon"
+                class="skills__icon"
+                src="./assets/icons/html5-icon.svg"
+              />
+              <p class="skills__name">HTML5</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="CSS3 Icon"
+                class="skills__icon"
+                src="./assets/icons/css3-icon.svg"
+              />
+              <p class="skills__name">CSS3</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="JavaScript Icon"
+                class="skills__icon"
+                src="./assets/icons/js-icon.svg"
+              />
+              <p class="skills__name">JavaScript</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="TypeScript Icon"
+                class="skills__icon"
+                src="./assets/icons/typescript-icon.svg"
+              />
+              <p class="skills__name">TypeScript</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="React Icon"
+                class="skills__icon"
+                src="./assets/icons/react-icon.svg"
+              />
+              <p class="skills__name">React</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="Tailwind CSS Icon"
+                class="skills__icon"
+                src="./assets/icons/tailwindCSS-icon.svg"
+              />
+              <p class="skills__name">Tailwind CSS</p>
+            </div>
           </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="TypeScript Icon"
-              class="skills__icon"
-              src="./assets/icons/typescript-icon.svg"
-            />
-            <p class="skills__name">TypeScript</p>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">Backend Development</h3>
+
+          <div class="skills__grid">
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="C# Icon"
+                class="skills__icon"
+                src="./assets/icons/csharp-icon.svg"
+              />
+              <p class="skills__name">C#</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt=".NET Icon"
+                class="skills__icon"
+                src="./assets/icons/dotnet-icon.svg"
+              />
+              <p class="skills__name">.NET</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="ASP.NET Core Icon"
+                class="skills__icon"
+                src="./assets/icons/asp.net-icon.svg"
+              />
+              <p class="skills__name">ASP.NET Core</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="SQL Server Icon"
+                class="skills__icon"
+                src="./assets/icons/sql-server-icon.svg"
+              />
+              <p class="skills__name">SQL Server</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="EF Core Icon"
+                class="skills__icon"
+                src="./assets/icons/entityframeworkcore-icon.svg"
+              />
+              <p class="skills__name">Entity Framework Core</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="ADO.NET Icon"
+                class="skills__icon"
+                src="./assets/icons/adonet-icon.svg"
+              />
+              <p class="skills__name">ADO.NET</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="REST Icon"
+                class="skills__icon"
+                src="./assets/icons/rest-icon.svg"
+              />
+              <p class="skills__name">RESTful APIs</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="JWT Icon"
+                class="skills__icon"
+                src="./assets/icons/jwt-icon.svg"
+              />
+              <p class="skills__name">JWT Authentication</p>
+            </div>
           </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="JavaScript Icon"
-              class="skills__icon"
-              src="./assets/icons/js-icon.svg"
-            />
-            <p class="skills__name">JavaScript</p>
-          </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="C# Icon"
-              class="skills__icon"
-              src="./assets/icons/csharp-icon.svg"
-            />
-            <p class="skills__name">C#</p>
-          </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt=".NET Icon"
-              class="skills__icon"
-              src="./assets/icons/dotnet-icon.svg"
-            />
-            <p class="skills__name">.NET</p>
-          </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="ASP.NET Core Icon"
-              class="skills__icon"
-              src="./assets//icons/asp.net-icon.svg"
-            />
-            <p class="skills__name">ASP.Net Core</p>
-          </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="Tailwind CSS Icon"
-              class="skills__icon"
-              src="./assets/icons/tailwindCSS-icon.svg"
-            />
-            <p class="skills__name">Tailwind CSS</p>
-          </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="SQL Server Icon"
-              class="skills__icon"
-              src="./assets/icons/sql-server-icon.svg"
-            />
-            <p class="skills__name">SQL Server</p>
-          </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="Git Icon"
-              class="skills__icon"
-              src="./assets//icons/git-icon.svg"
-            />
-            <p class="skills__name">Git &amp; GitHub</p>
-          </div>
-          <div class="skills__card">
-            <img
-              loading="lazy"
-              alt="Azure Icon"
-              class="skills__icon"
-              src="./assets/icons/azure-icon.svg"
-            />
-            <p class="skills__name">Azure</p>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">Tools & Platforms</h3>
+
+          <div class="skills__grid">
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="Git Icon"
+                class="skills__icon"
+                src="./assets/icons/git-icon.svg"
+              />
+              <p class="skills__name">Git & GitHub</p>
+            </div>
+
+            <div class="skills__card">
+              <img
+                loading="lazy"
+                alt="Azure Icon"
+                class="skills__icon"
+                src="./assets/icons/azure-icon.svg"
+              />
+              <p class="skills__name">Microsoft Azure</p>
+            </div>
           </div>
         </div>
       </section>
