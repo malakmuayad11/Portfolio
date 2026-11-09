@@ -1,5 +1,4 @@
 .hero {
-  padding: var(--spacing-6);
   margin: 0 auto;
 }
 
@@ -176,10 +175,6 @@
 
 /* Larger screens */
 @media (min-width: 768px) {
-  .hero {
-    padding: var(--spacing-9) var(--spacing-6);
-  }
-
   .hero__container {
     flex-direction: row;
     align-items: center;

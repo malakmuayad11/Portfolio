@@ -10,3 +10,15 @@ body {
 .layout {
   grid-area: "main";
 }
+
+.layout > section {
+  padding: var(--spacing-7) var(--spacing-4);
+}
+
+.layout > section > :first-child {
+  margin-block-start: 0;
+}
+
+.layout > section > :last-child {
+  margin-block-end: 0;
+}
