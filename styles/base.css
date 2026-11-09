@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: var(--font-family); */
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  background: var(--color-background);
+  line-height: var(--line-height-normal);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}

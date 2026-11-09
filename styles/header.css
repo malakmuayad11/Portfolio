@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  position: sticky;
+  z-index: 9999;
+  background-color: var(--color-secondary);
+  padding: var(--spacing-3);
+}
+
+.header__brand {
+  transform: translateY(-7px);
+  font-size: var(--font-size-xl);
+  color: var(--color-accent);
+}
+
+.header__brand-icon {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+}
+
+.header__nav-list {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.header__nav-item {
+  list-style-type: none;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.header__nav-link:hover {
+  color: var(--color-primary);
+}
