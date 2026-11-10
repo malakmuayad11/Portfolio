@@ -163,11 +163,19 @@
   min-width: 0;
 }
 
+/* Hero image */
+.hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.8;
+  min-width: 0;
+}
+
 .hero__profile-image {
   display: block;
-  width: 100%;
-  max-width: 350px;
-  height: 350px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -190,6 +198,8 @@
   }
 
   .hero__profile-image {
+    width: 100%;
     max-width: 350px;
+    height: 350px;
   }
 }
